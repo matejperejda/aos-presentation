@@ -19,7 +19,7 @@
 ## Fungovanie
 
 * využíva [SNMP](https://github.com/matejperejda/aos-presentation/blob/master/SNMP.md) protokol na posielanie požiadaviek s dvomi OID objektami smerom k zariadeniu
-* zariadenie musí mať aktivované SNMP a k dispozícii MIB databázu pre vyhľadanie špecifikovaného OID
+* zariadenie musí mať aktivované SNMP a k dispozícii MIB databázu pre vyhľadanie špecifikovaných OID objektov
 * zariadenie zozbiera potrebné informácie a pošle ich späť zapuzdrené v SNMP protokole
 * MRTG zaznamenáva tieto údaje do logu spolu s predchádzajúcimi zaznamenanými údajmi
 * z týchto záznamov vytvorí HTML dokument, ktorý obsahuje zoznam grafov s podrobnosťami o vyťaźenosti siete 
@@ -31,10 +31,11 @@
 * meranie dvoch hodnôt (I – input, O – output) v rámci jedného sledovaného zariadenia
 *	získanie dát prostredníctvom SNMP agenta alebo cez pomocou príkazového riadoka
 * predvolene zhromažďuje údaje každých päť minút (možnosť nastaviť inak)
-* generuje HTML stránku pre každé sledované zariadenie, ktorá obsahuje štyri grafy
+* generuje HTML stránku pre každé sledované zariadenie, ktorá obsahuje štyri grafy (reálny ćas, 7 dní, 5 týždňov, 12 mesiacov)
 * výsledky sú vykresľované na časovej osi (I – zelená plná oblasť, O – modrá krivka)
 * vyznačuje maximálne, priemerné a aktuálne hodnoty pre I a O
 * môže odosielať výstražné emaily, ak je prekročená nejaká hraničná hodnota 
+* monitorovanie rôznych vlastností systému (otáčky ventilátora CPU, informácie o prihlásení do systému,...)
 
 ***
 
