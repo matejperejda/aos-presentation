@@ -53,7 +53,34 @@
   <img src="http://25119-presscdn.pagely.netdna-cdn.com/wp-content/uploads/ScreenshotOIDFolderView.png" alt="OID Tree"/>
 </p>
 
-* operácie: 
+* operácie (tzv. PDU - Protocol Data Unit): 
+  * *GetRequest*
+    * od managera k agentovi
+    * načítanie jednej/viac premenných
+    * vracia odpoveď s aktuálnymi hodnotami
+  *	*GetNextRequest*
+    * od managera k agentovi
+    * načítanie jednej/viac premenných 
+    * vracia odpoveď s hodnotou ďalšej premennej v strome, ktorá nadväzuje na predchádzajúcu premennú  (pri čítaní tabuliek)
+  * *GetBulkRequest* (od verzie SNMPv2) 
+    * od managera k agentovi
+    * pre viac iterácií GetNextRequest
+    * vracia  odpoveď s viac väzbami premenných – podstrom 
+  * *SetRequest*
+    * od managera k agentovi
+    * pre zmenu hodnoty jednej/viac premenných
+    * vracia odpoveď s novými hodnotami premenných
+  * *Trap*
+    * od agenta k managerovi
+    * agent môže oznámiť významné udalosti pomocou nevyžiadanej správy (napr. správa o reštarte) 
+  * *InformRequest* (od verzie SNMPv2)
+    * potvrdzovaný Trap – čaká od managera potvrdenie 
+  *	*Response*
+    * vracia väzby premenných a potvrdenie od agenta k managerovi
+    *	reakcia na príkazy GetRequest, SetRequest, GetNextRequest, GetBulkRequest, InformRequest
+  * *Report* (od verzie SNMPv3)
+
+
 
 
 ***
