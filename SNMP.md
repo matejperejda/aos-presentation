@@ -115,7 +115,42 @@
 
 ***
 
-## Použitie
+## Fungovanie
+
+SNMP je možné využívať na jednom/viac správcovských počítačoch, ktorých úlohou je sledovať/riadiť skupinu počítačov alebo iných zariadení v sieti. 
+
+### Monitorovaná strana (spravované zariadenia)
+* sieťový uzol, ktorý podporuje SNMP rozhranie
+*	napr. routery, switche, VOIP telefóny, IP kamery, tlačiarne,...
+*	beží na ňom proces (**agent**), zvyčajne už zabudovaný v monitorovanom zariadení, stačí ho iba aktivovať, resp. nakonfigurovať
+  * slúži k správe siete na spravovanom zariadení 
+  * zabezpečuje reakcie na požiadavky správcovského počítača alebo odosiela SNMP Trapy
+* zhromažďujú sa informácie o stave systému (zariadenia) k následnému odosielaniu
+* konfigurácia SNMP TRAP
+  * agent zasiela managerovi informácie automaticky bez požiadavky
+  * ak nastane vopred definovaná podmienka (napr. výpadok, kolízia), 
+  * agent nečaká za odpoveďou od NMS 
+* dáta agentov sú evidované ako premenné (je ich možné vzdialene modifikovať a meniť tým konfiguráciu)
+* nezabezpečené SNMP
+  *	prijíma požiadavky na **UDP porte 161**
+  * odosiela odpovede managerovi na jeho zdrojový port
+  * zasiela managerovi Trapy/Inform na **UDP porte 162**
+  * agent môže generovať oznámenia z akéhokoľvek dostupného portu
+*	zabezpečené SNMP (SNMPv3)
+  * prijíma požiadavky na porte 10161
+
+### Monitorovacia strana (NMS)
+
+* spustený **monitorovací manager** 
+  *	posiela požiadavky agentom na zaslanie požadovaných informácií
+  *	spravuje aplikácie, ktoré monitorujú a kontrolujú spravované zariadenia
+* môže existovať viac NMS v jednej spravovanej sieti
+* získaný obsah sa môže ďalej rôznym spôsobom spracovávať (tabuľky, grafy, generovanie reportov, odosielanie emailov, SMS upozornení o spadnutí systému,...)
+* nezabezpečené SNMP
+  * posiela požiadavky k agentov z akéhokoľvek dostupného portu
+  * prijíma od agenta Trapy na **UDP porte 162**
+* zabezpečené SNMP (SNMPv3)
+  * prijíma Trapy od agenta na porte 10162 
 
 ***
 
