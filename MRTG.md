@@ -47,14 +47,28 @@
 
 ### Windows - [link](https://oss.oetiker.ch/mrtg/doc/mrtg-nt-guide.en.html)
 
-Prerekvizity:
+**Prerekvizity**
 * [Perl](https://www.activestate.com/activeperl/downloads)
+  * prítomnosť skontrolovať v CMD pomocou `perl -v`
 * [MRTG](https://oss.oetiker.ch/mrtg/pub/?M=D)
+  * stiahnuť zip a extrahovať súbory
 * Aktivovať SNMP service 
   * Ovládací panel - Programy a súčasti - Zapnúť alebo vypnúť súčasti systému Windows - SNMP - OK
   * Start - services.msc - SNMP Service
     * Traps - Community name: "public", Trap destination: "127.0.0.1" 
     * Security - Accepted comunity names: "public, READ ONLY", Accept SNMP packets from these hosts: "localhost"
+
+**Konfigurácia MRTG**
+
+```bash
+cd ..\mrtg-2.17.4\bin
+perl cfgmaker public@10.10.10.1 --global "WorkDir: c:\www\mrtg" --output mrtg.cfg
+```
+> `public` - READ ONLY community string
+
+> `localhost` - IP adresa zariadenia
+
+> `mrtg.cfg` - meno výsledného konfiguračného súboru
 
 ***
 
