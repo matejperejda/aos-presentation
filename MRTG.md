@@ -3,7 +3,7 @@
 - [Charakteristika](#charakteristika)
 - [Fungovanie](#fungovanie)
 - [Funkcie](#funkcie)
-- [Príklad](#príklad)
+- [Návod](#návod)
 
 ## Charakteristika
 
@@ -13,6 +13,10 @@
 * monitorovanie SNMP siete a vykresľovanie grafov, ktoré ukazujú ako veľmi sú sieťové rozhrania vyťažené 
 * napísaný v Perl 
 * kompatibilita s Windows, Linux, Unix, Mac OS a NetWare
+
+<p align="center">
+  <img src="https://www.pcwdld.com/wp-content/uploads/gui-screenshot.jpg" alt="MRTG example"/>
+</p>
 
 ***
 
@@ -39,7 +43,15 @@
 
 ***
 
-## Príklad
+## Návod
+
+### Windows - [link](https://oss.oetiker.ch/mrtg/doc/mrtg-nt-guide.en.html)
+
+Prerekvizity:
+* [Perl](https://www.activestate.com/activeperl/downloads)
+* [MRTG](https://oss.oetiker.ch/mrtg/pub/?M=D)
+
+
 
 ***
 
