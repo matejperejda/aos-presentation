@@ -8,7 +8,6 @@
 * používa ho väčšina nástrojov pre správu a monitorovanie siete (Spiceworks, Solarwinds, OpenNMS, ...)
 
 **Funkcie**
-
 *	schopnosť čítania/zapisovania - napr. pre vzdialené restovanie hesiel, konfigurácia IP adries
 *	zbieranie informácií - reporty o chybách
 *	zasielanie upozornení e-mailom (napr. o nedostatočnom mieste na disku)
@@ -38,7 +37,6 @@
   * pridané šifrovanie (zabezpečenie pomocou mena a hesla) – použitie pri prenášaní informácií cez nezabezpečené spojenia
   
 **SNMP sieť**
-
 1.	spravované zariadenia
 2.	agenti
 3.	spravovacie zariadenia = NMS (Network Management Station) 
@@ -48,7 +46,6 @@
 </p>
 
 **Princíp**
-
 * dopytovanie na "objekty" (na informácie o sieťových zariadeniach) 
 * každý "objekt" má vlastný identifikátor, tzv. **OID** (Object Identifier)
 * OID má hierarchickú stromovú štruktúru (ako štruktúra priečinka) 
@@ -60,7 +57,6 @@
 </p>
 
 **MIB (Management Information Bases)**
-
 * databáza OID objektov (premenných), ktoré je možné čítať, nastavovať alebo dopytovať cez SNMP
 * má ju každý agent a manažér
 * pomáha managerovi porozumieť SNMP odpovediam
@@ -108,6 +104,15 @@
     * vracia väzby premenných a potvrdenie od agenta k managerovi
     *	reakcia na príkazy GetRequest, SetRequest, GetNextRequest, GetBulkRequest, InformRequest
   * *Report* (od verzie SNMPv3)
+  
+**SNMP datagram**
+* verzia SNMP 
+* autentifikačná informácia (Community String)
+* typ PDU (Protocol Data Unit) – GetRequest, GetResponse, ...
+* identifikátor datagramu/dotazu (pre priradenie odpovede)
+* informácie o chybe 
+* zoznam OID premenných a ich hodnôt 
+
 
 ***
 
