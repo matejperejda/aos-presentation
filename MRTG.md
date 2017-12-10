@@ -62,7 +62,7 @@
 
 ```bash
 cd ..\mrtg-2.17.4\bin
-perl cfgmaker public@localhost --global "WorkDir: C:\www\mrtg" --output server.cfg
+perl cfgmaker public@localhost --global --output server.cfg
 ```
 > `public` - READ ONLY community string
 
@@ -72,9 +72,13 @@ perl cfgmaker public@localhost --global "WorkDir: C:\www\mrtg" --output server.c
 
 **Nastavenie cesty k reportom**
 * Ukladanie reportov do špeciálneho adresára
-  * v `server.cfg` zmeniť odkomentovať a zmeniť cestu k `or for NT` na `WorkDir: ..\mrtg-2.17.4\reports`
+  * v `server.cfg` doplniť cestu k reportom `WorkDir: ..\mrtg-2.17.4\reports`
 * Pravidelné volanie MRTG 
   * do `server.cfg` doplniť `RunAsDaemon: yes`
+
+**Spustenie MRTG**
+
+`perl mrtg server.cfg`
 
 
 ***
