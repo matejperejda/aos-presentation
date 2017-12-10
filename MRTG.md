@@ -2,6 +2,12 @@
 
 ## Charakteristika
 
+* **Multi Router Traffic Grapher**
+* nástroj pre monitorovanie a meranie záťaže v sieti v reálnom čase
+* monitorovanie SNMP siete a vykresľovanie grafov, ktoré ukazujú ako veľmi sú sieťové rozhrania vyťažené 
+* napísaný v Perl 
+* kompatibilita s Windows, Linux, Unix, Mac OS a NetWare
+
 ***
 
 ## Fungovanie
