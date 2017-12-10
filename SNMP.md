@@ -193,6 +193,10 @@ SNMP je možné využívať na jednom/viac správcovských počítačoch, ktorý
 
 > `$download-mibs`
 
+5. Poslanie požiadavky na server (router)
+
+> `$snmpwalk -v1 -c public 10.0.0.1`
+
 
 ### Server (router)
 
