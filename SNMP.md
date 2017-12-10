@@ -97,7 +97,6 @@
 * informácie o chybe 
 * zoznam OID premenných a ich hodnôt 
 
-
 ### Verzie
 * SNMPv1
   * vznik 1988 (RFC 106, [RFC 1066](https://tools.ietf.org/html/rfc1066), [RFC 1067](https://tools.ietf.org/html/rfc1067))
@@ -142,8 +141,8 @@ SNMP je možné využívať na jednom/viac správcovských počítačoch, ktorý
   * odosiela odpovede managerovi na jeho zdrojový port
   * zasiela managerovi Trapy/Inform na **UDP porte 162**
   * agent môže generovať oznámenia z akéhokoľvek dostupného portu
-*	zabezpečené SNMP (SNMPv3)
-  * prijíma požiadavky na porte 10161
+* zabezpečené SNMP (SNMPv3)
+  * prijíma požiadavky na porte 10161 
 
 ### Monitorovacia strana (NMS)
 
