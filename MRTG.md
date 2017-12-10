@@ -2,7 +2,7 @@
 
 ## Charakteristika
 
-* **Simple Network Management Protocol** ~ jednoduchý protokol správy siete
+* **Simple Network Management Protocol** ~ jednoduchý protokol spravovania siete
 * správa a monitorovanie zariadení pripojených v sieti a následné vyhodnocovanie prijatých dát
 * súčasť sady protokolov aplikačnej vrstvy TCP/IP
 * používa ho väčšina nástrojov pre správu a monitorovanie siete (Spiceworks, Solarwinds, OpenNMS, ...)
