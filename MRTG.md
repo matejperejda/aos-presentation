@@ -29,13 +29,19 @@
 
 **Princíp:**
 
-* dopytovanie na objekty (na informácie o sieťových zariadeniach) 
-* každý objekt má vlastný identifikátor, tzv. **OID** 
+* dopytovanie na "objekty" (na informácie o sieťových zariadeniach) 
+* každý "objekt" (informácia o sieťovom zariadení) má vlastný identifikátor, tzv. **OID** (Object Identifier)
 * OID má hierarchickú stromovú štruktúru (ako štruktúra priečinka) 
 * každý z objektov v strome je očíslovaný 
 * OID môže mať návratovú hodnotu rôznych typov (text, číslo, ...)
 
+<p align="center">
+  <img src="http://25119-presscdn.pagely.netdna-cdn.com/wp-content/uploads/SNMP_OID_MIB_Tree.png" alt="OID Tree"/>
+</p>
 
+<p align="center">
+  <img src="http://25119-presscdn.pagely.netdna-cdn.com/wp-content/uploads/ScreenshotOIDFolderView.png" alt="OID Tree"/>
+</p>
 
 ***
 
