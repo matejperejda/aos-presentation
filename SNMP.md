@@ -4,6 +4,7 @@
   * [Funkcie](#funkcie)
   * [SNMP sieť](#snmp-sieť)
   * [Princíp](#princíp)
+  * [MIB (Management Information Bases)](#mib-management-information-bases)
   * [SNMP datagram](#snmp-datagram)
   * [Verzie](#verzie)
 - [Fungovanie](#fungovanie)
