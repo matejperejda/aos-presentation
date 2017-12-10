@@ -8,7 +8,7 @@
 ## Charakteristika
 
 * **Multi Router Traffic Grapher**
-* nástroj pre monitorovanie a meranie záťaže v sieti v reálnom čase
+* nástroj pre monitorovanie a meranie záťaže sieťových rozhraní v reálnom čase 
 * "máme napríklad router a chceme vedieť ako je počas celého dňa vyťažený"
 * monitorovanie SNMP siete a vykresľovanie grafov, ktoré ukazujú ako veľmi sú sieťové rozhrania vyťažené 
 * napísaný v Perl 
@@ -22,13 +22,13 @@
 * zariadenie musí mať aktivované SNMP a k dispozícii MIB databázu pre vyhľadanie špecifikovaných OID objektov
 * zariadenie zozbiera potrebné informácie a pošle ich späť zapuzdrené v SNMP protokole
 * MRTG zaznamenáva tieto údaje do logu spolu s predchádzajúcimi zaznamenanými údajmi
-* z týchto záznamov vytvorí HTML dokument, ktorý obsahuje zoznam grafov s podrobnosťami o vyťaźenosti siete 
+* z týchto záznamov vytvorí HTML dokument, ktorý obsahuje zoznam grafov s podrobnosťami o vyťaźenosti každého dostupného sieťového rozhrania 
 
 ***
 
 ## Funkcie
 
-* meranie dvoch hodnôt (I – input, O – output) v rámci jedného sledovaného zariadenia
+* meranie dvoch hodnôt (I – input, O – output) v rámci jedného sledovaného sieťového rozhrania
 *	získanie dát prostredníctvom SNMP agenta alebo cez pomocou príkazového riadoka (spustenia skriptu `mrtg`)
 * predvolene zhromažďuje údaje každých päť minút (možnosť nastaviť inak)
 * generuje HTML stránku pre každé sledované zariadenie, ktorá obsahuje štyri grafy (reálny ćas, 7 dní, 5 týždňov, 12 mesiacov)
