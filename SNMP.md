@@ -1,5 +1,16 @@
 # [SNMP](https://tools.ietf.org/html/rfc3411)
 
+- [Charakteristika](#charakteristika)
+  * [Funkcie](#funkcie)
+  * [SNMP sieť](#snmp-sieť)
+  * [Princíp](#princíp)
+  * [SNMP datagram](#snmp-datagram)
+  * [Verzie](#verzie)
+- [Fungovanie](#fungovanie)
+  * [Monitorovaná strana (spravované zariadenia)](#monitorovaná-strana-spravované-zariadenia)
+  * [Monitorovacia strana (NMS)](#monitorovacia-strana-nms)
+- [Príklad](#príklad)
+
 ## Charakteristika
 
 * **Simple Network Management Protocol** ~ jednoduchý protokol spravovania siete
