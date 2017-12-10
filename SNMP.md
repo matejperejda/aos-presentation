@@ -125,6 +125,7 @@
 SNMP je možné využívať na jednom/viac správcovských počítačoch, ktorých úlohou je sledovať/riadiť skupinu počítačov alebo iných zariadení v sieti. 
 
 ### Monitorovaná strana (spravované zariadenia)
+
 * sieťový uzol, ktorý podporuje SNMP rozhranie
 *	napr. routery, switche, VOIP telefóny, IP kamery, tlačiarne,...
 *	beží na ňom proces (**agent**), zvyčajne už zabudovaný v monitorovanom zariadení, stačí ho iba aktivovať, resp. nakonfigurovať
@@ -157,10 +158,15 @@ SNMP je možné využívať na jednom/viac správcovských počítačoch, ktorý
 * zabezpečené SNMP (SNMPv3)
   * prijíma Trapy od agenta na porte 10162 
 
+<p align="center">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/SNMP_TRAFFIC1.png" alt="SNMP exchange"/>
+</p>
+
 ***
 
 ## Príklad
 
+[Dokoncit]
 
 ***
 
