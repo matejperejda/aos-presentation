@@ -197,6 +197,10 @@ SNMP je možné využívať na jednom/viac správcovských počítačoch, ktorý
 
 > `$snmpwalk -v1 -c public 10.0.0.1`
 
+6. Dopytovanie špecifikovaného OID
+
+> ``
+
 ### Server (router)
 
 1. Inštalácia agenta 
@@ -225,9 +229,6 @@ SNMP je možné využívať na jednom/viac správcovských počítačoch, ktorý
 
 > `sysContact admin@upjs.sk`
 
-
-
-
 ***
 
 *Zdroje:* 
@@ -248,4 +249,4 @@ SNMP je možné využívať na jednom/viac správcovských počítačoch, ktorý
 
 [8] https://wiki.debian.org/SNMP
 
-[]
+[9] https://nsrc.org/workshops/ws-files/2011/sanog17/exercises/exercises-snmp-v1-v2c.html
