@@ -10,7 +10,7 @@
 - [Fungovanie](#fungovanie)
   * [Monitorovaná strana (spravované zariadenia)](#monitorovaná-strana-spravované-zariadenia)
   * [Monitorovacia strana (NMS)](#monitorovacia-strana-nms)
-- [Príklad](#príklad)
+- [Návod](#návod)
 
 ## Charakteristika
 
@@ -175,7 +175,24 @@ SNMP je možné využívať na jednom/viac správcovských počítačoch, ktorý
 
 ***
 
-## Príklad
+## Návod 
+
+### Klient
+
+1. Inštalácia managera (súčasťou je aj ```snmpwalk```)
+
+`$apt-get install snmp`
+
+2. Inštalácia MIB databázy (potrebné pridať `non-free` repozitár v `/etc/apt/sources.list`, potom `apt-get update`)
+
+`$apt-get install snmp-mibs-downloader`
+
+
+
+
+### Server (router)
+
+
 
 [Dokoncit]
 
@@ -197,6 +214,6 @@ SNMP je možné využívať na jednom/viac správcovských počítačoch, ktorý
 
 [7] https://technet.microsoft.com/en-us/library/cc783142(v=ws.10).aspx
 
-[]
+[8] https://wiki.debian.org/SNMP
 
 []
