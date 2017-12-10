@@ -39,10 +39,6 @@
   <img src="http://25119-presscdn.pagely.netdna-cdn.com/wp-content/uploads/SNMP_OID_MIB_Tree.png" alt="OID Tree"/>
 </p>
 
-<p align="center">
-  <img src="http://25119-presscdn.pagely.netdna-cdn.com/wp-content/uploads/ScreenshotOIDFolderView.png" alt="OID Tree"/>
-</p>
-
 **MIB (Management Information Bases)**
 
 * databáza OID objektov (premenných), ktoré je možné čítať, nastavovať alebo dopytovať cez SNMP
@@ -52,6 +48,11 @@
 * výrobcovia môžu dodávať vlastné MIB súbory s objektami, ktoré nie sú obsiahnuté v štandardnej sade MIB-2
 * tieto upravené MIB súbory sa načítajú do NMS, aby manager vedel na ktoré SNMP objekty sa môže dopytovať
 * na konkrétny objekt sa odkazuje cez cestu, ktorá pozostáva z indexov OID objektov (napr. *1.3.6.1.2.1*, to isté ako *iso.org.dod.internet.mgmt.mib-2*)
+
+<p align="center">
+  <img src="http://25119-presscdn.pagely.netdna-cdn.com/wp-content/uploads/ScreenshotOIDFolderView.png" alt="OID Tree"/>
+</p>
+
 * operácie: 
 
 
