@@ -1,5 +1,10 @@
 # [MRTG](https://oss.oetiker.ch/mrtg/)
 
+- [Charakteristika](#charakteristika)
+- [Fungovanie](#fungovanie)
+- [Funkcie](#funkcie)
+- [Príklad](#príklad)
+
 ## Charakteristika
 
 * **Multi Router Traffic Grapher**
@@ -13,7 +18,7 @@
 
 ## Fungovanie
 
-* používa [SNMP](https://github.com/matejperejda/aos-presentation/blob/master/SNMP.md) na posielanie požiadaviek s dvomi OID objektami smerom k zariadeniu
+* využíva [SNMP](https://github.com/matejperejda/aos-presentation/blob/master/SNMP.md) protokol na posielanie požiadaviek s dvomi OID objektami smerom k zariadeniu
 * zariadenie musí mať aktivované SNMP a k dispozícii MIB databázu pre vyhľadanie špecifikovaného OID
 * zariadenie zozbiera potrebné informácie a pošle ich späť zapuzdrené v SNMP protokole
 * MRTG zaznamenáva tieto údaje do logu spolu s predchádzajúcimi zaznamenanými údajmi
@@ -22,6 +27,14 @@
 ***
 
 ## Funkcie
+
+* meranie dvoch hodnôt (I – input, O – output) v rámci jedného sledovaného zariadenia
+*	získanie dát prostredníctvom SNMP agenta alebo cez pomocou príkazového riadoka
+* predvolene zhromažďuje údaje každých päť minút (možnosť nastaviť inak)
+* generuje HTML stránku pre každé sledované zariadenie, ktorá obsahuje štyri grafy
+* výsledky sú vykresľované na časovej osi (I – zelená plná oblasť, O – modrá krivka)
+* vyznačuje maximálne, priemerné a aktuálne hodnoty pre I a O
+* môže odosielať výstražné emaily, ak je prekročená nejaká hraničná hodnota 
 
 ***
 
