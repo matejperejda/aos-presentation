@@ -217,6 +217,16 @@ SNMP je možné využívať na jednom/viac správcovských počítačoch, ktorý
 
 > `$service snmpd restart`
 
+6. Konfigurácia SNMP v `/etc/snmp/snmpd.conf`
+
+> `rocommunity public`
+
+> `sysLocation Slovakia`
+
+> `sysContact admin@upjs.sk`
+
+
+
 
 ***
 
