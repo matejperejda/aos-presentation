@@ -86,12 +86,17 @@
   * *Report* (od verzie SNMPv3)
   
 **SNMP datagram**
+
+| Verzia        | Community String           | Typ PDU | ID datagramu | Info o chybe | OID | 
+| ------------- |:--------------------------:|:-------:|:------------:|:------------:|----:|
+
 * verzia SNMP 
 * autentifikačná informácia (Community String)
 * typ PDU (Protocol Data Unit) – GetRequest, GetResponse, ...
 * identifikátor datagramu/dotazu (pre priradenie odpovede)
 * informácie o chybe 
 * zoznam OID premenných a ich hodnôt 
+
 
 **Verzie**
 * SNMPv1
