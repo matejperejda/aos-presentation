@@ -187,7 +187,11 @@ SNMP je možné využívať na jednom/viac správcovských počítačoch, ktorý
 
 `$apt-get install snmp-mibs-downloader`
 
+3. V `/etc/snmp/snmp.conf` zakomentovať `mibs:`
 
+4. Aktualizovať MIB databázu
+
+`$download-mibs`
 
 
 ### Server (router)
