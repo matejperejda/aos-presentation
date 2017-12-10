@@ -193,13 +193,21 @@ SNMP je možné využívať na jednom/viac správcovských počítačoch, ktorý
 
 > `$download-mibs`
 
-5. Poslanie požiadavky na server (router)
+5. Výpis celého MIB stromu // volá sa automaticky GetNextRequest
 
-> `$snmpwalk -v1 -c public 10.0.0.1`
+> `$snmpwalk -v1 -c public 10.0.0.1 [OID]`
+
+alebo 
+
+> `$snmpwalk -v1 -c public -On 10.0.0.1 [OID]`
 
 6. Dopytovanie špecifikovaného OID
 
-> `$snmpget -v1 -c public 10.0.0.1 [OID]` // napr. 1.3.6.1.2.1.1.1.0
+> `$snmpget -v1 -c public 10.0.0.1 OID` // napr. OID = 1.3.6.1.2.1.1.1.0
+
+alebo
+
+> `$snmpget -v1 -c public 10.0.0.1 sysUpTime.0` 
 
 ### Server (router)
 
