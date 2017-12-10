@@ -17,6 +17,26 @@
 *	pravidelné hlásenie stavu
 * iné
 
+**Verzie**
+* SNMPv1
+  * vznik 1988 (RFC 106, [RFC 1066](https://tools.ietf.org/html/rfc1066), [RFC 1067](https://tools.ietf.org/html/rfc1067))
+  * základná funkcionalita
+  * použitie pre starší HW
+  * autentifikácia (spravovaného) klienta riešená pomocou „*Community String*“ (ekvivalent hesla), ktorý je prenášaný ako čistý reťazec
+  * slabosť: zabezpečenie
+* SNMPv2 (SNMPv2c)
+  * vznik 1993
+  * podporovaná najviac zariadeniami
+  * odstránenie nedostatkov SNMPv1
+  * nové PDU typy (*Inform*, *GetBulk*)
+  * nové typy premenných (64-bitové hodnoty)
+  * rozšírenie štandardnej MIB
+  * pridaná kontrola doručenia (pri UDP možné straty paketov)
+  * slabosť: autentifikácia stále na úrovni SNMPv1
+* SNMPv3
+  * vznik 2004 ([RFC 3411](http://www.ietf.org/rfc/rfc3411.txt) – [RFC 3418](http://www.ietf.org/rfc/rfc3418.txt))
+  * pridané šifrovanie (zabezpečenie pomocou mena a hesla) – použitie pri prenášaní informácií cez nezabezpečené spojenia
+  
 **SNMP sieť**
 
 1.	spravované zariadenia
