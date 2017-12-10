@@ -2,11 +2,55 @@
 
 ## Charakteristika
 
+* **Simple Network Management Protocol** ~ jednoduchý manažérsky protokol siete/jednoduchý protokol manažérstva siete
+* správa a monitorovanie zariadení pripojených v sieti a následné vyhodnocovanie prijatých dát
+* súčasť sady protokolov aplikačnej vrstvy TCP/IP
+* používa ho väčšina nástrojov pre správu a monitorovanie siete (Spiceworks, Solarwinds, OpenNMS, ...)
+
+**Funkcie:**
+
+*	schopnosť čítania/zapisovania - napr. pre vzdialené restovanie hesiel, konfigurácia IP adries
+*	zbieranie informácií - reporty o chybách
+*	zasielanie upozornení e-mailom (napr. o nedostatočnom mieste na disku)
+*	monitorovanie CPU a pamäte servera
+*	odosielanie SMS správ, ak systém padne
+*	pravidelné hlásenie stavu
+* iné
+
+**SNMP sieť:**
+
+1.	spravované zariadenia
+2.	agenti
+3.	spravovacie zariadenia = NMS (Network Management Station) 
+
+<p align="center">
+  <img src="https://www.manageengine.com/network-monitoring/images/snmp-components.gif" alt="SNMP Network"/>
+</p>
+
+**Princíp:**
+
+* dopytovanie na objekty (na informácie o sieťových zariadeniach) 
+* každý objekt má vlastný identifikátor, tzv. **OID** 
+* OID má hierarchickú stromovú štruktúru (ako štruktúra priečinka) 
+* každý z objektov v strome je očíslovaný 
+* OID môže mať návratovú hodnotu rôznych typov (text, číslo, ...)
+
+
+
+***
+
 ## Použitie
+
+***
 
 ## Verzie
 
+***
+
 ## Príklad
+
+
+***
 
 *Zdroje:* 
 
