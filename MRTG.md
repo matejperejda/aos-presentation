@@ -50,8 +50,11 @@
 Prerekvizity:
 * [Perl](https://www.activestate.com/activeperl/downloads)
 * [MRTG](https://oss.oetiker.ch/mrtg/pub/?M=D)
-
-
+* Aktivovať SNMP service 
+  * Ovládací panel - Programy a súčasti - Zapnúť alebo vypnúť súčasti systému Windows - SNMP - OK
+  * Start - services.msc - SNMP Service
+    * Traps - Community name: "public", Trap destination: "127.0.0.1" 
+    * Security - Accepted comunity names: "public, READ ONLY", Accept SNMP packets from these hosts: "localhost"
 
 ***
 
