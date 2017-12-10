@@ -199,7 +199,7 @@ SNMP je možné využívať na jednom/viac správcovských počítačoch, ktorý
 
 6. Dopytovanie špecifikovaného OID
 
-> ``
+> `$snmpget -v1 -c public 10.0.0.1 [OID]` // napr. 1.3.6.1.2.1.1.1.0
 
 ### Server (router)
 
@@ -250,3 +250,5 @@ SNMP je možné využívať na jednom/viac správcovských počítačoch, ktorý
 [8] https://wiki.debian.org/SNMP
 
 [9] https://nsrc.org/workshops/ws-files/2011/sanog17/exercises/exercises-snmp-v1-v2c.html
+
+[10] https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-an-snmp-daemon-and-client-on-ubuntu-14-04
