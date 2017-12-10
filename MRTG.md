@@ -29,7 +29,7 @@
 ## Funkcie
 
 * meranie dvoch hodnôt (I – input, O – output) v rámci jedného sledovaného zariadenia
-*	získanie dát prostredníctvom SNMP agenta alebo cez pomocou príkazového riadoka
+*	získanie dát prostredníctvom SNMP agenta alebo cez pomocou príkazového riadoka (spustenia skriptu `mrtg`)
 * predvolene zhromažďuje údaje každých päť minút (možnosť nastaviť inak)
 * generuje HTML stránku pre každé sledované zariadenie, ktorá obsahuje štyri grafy (reálny ćas, 7 dní, 5 týždňov, 12 mesiacov)
 * výsledky sú vykresľované na časovej osi (I – zelená plná oblasť, O – modrá krivka)
@@ -47,6 +47,6 @@
 
 [1] https://en.wikipedia.org/wiki/Multi_Router_Traffic_Grapher
 
-[]
+[2] https://linux.die.net/man/1/mrtg
 
 []
