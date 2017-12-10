@@ -181,17 +181,17 @@ SNMP je možné využívať na jednom/viac správcovských počítačoch, ktorý
 
 1. Inštalácia managera (súčasťou je aj ```snmpwalk```)
 
-`$apt-get install snmp`
+> `$apt-get install snmp`
 
 2. Inštalácia MIB databázy (potrebné pridať `non-free` repozitár v `/etc/apt/sources.list`, potom `apt-get update`)
 
-`$apt-get install snmp-mibs-downloader`
+> `$apt-get install snmp-mibs-downloader`
 
 3. V `/etc/snmp/snmp.conf` zakomentovať `mibs:`
 
 4. Aktualizovať MIB databázu
 
-`$download-mibs`
+> `$download-mibs`
 
 
 ### Server (router)
