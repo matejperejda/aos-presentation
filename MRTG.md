@@ -62,7 +62,7 @@
 
 ```bash
 cd ..\mrtg-2.17.4\bin
-perl cfgmaker public@localhost --global --output server.cfg
+perl cfgmaker public@localhost --output server.cfg
 ```
 > `public` - READ ONLY community string
 
