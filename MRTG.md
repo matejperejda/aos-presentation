@@ -109,16 +109,9 @@
     *	reakcia na príkazy GetRequest, SetRequest, GetNextRequest, GetBulkRequest, InformRequest
   * *Report* (od verzie SNMPv3)
 
-
-
-
 ***
 
 ## Použitie
-
-***
-
-## Verzie
 
 ***
 
