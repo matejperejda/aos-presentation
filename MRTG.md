@@ -58,6 +58,9 @@
     * od managera k agentovi
     * načítanie jednej/viac premenných
     * vracia odpoveď s aktuálnymi hodnotami
+    <p align="center">
+      <img src="https://www.manageengine.com/network-monitoring/images/snmp-get-response.gif" alt="Get request"/>
+    </p>
   *	*GetNextRequest*
     * od managera k agentovi
     * načítanie jednej/viac premenných 
@@ -72,9 +75,15 @@
     * vracia odpoveď s novými hodnotami premenných
   * *Trap*
     * od agenta k managerovi
-    * agent môže oznámiť významné udalosti pomocou nevyžiadanej správy (napr. správa o reštarte) 
+    * agent môže oznámiť významné udalosti pomocou nevyžiadanej správy (napr. správa o reštarte)
+     <p align="center">
+      <img src="https://www.manageengine.com/network-monitoring/images/snmp-trap.gif" alt="Trap request"/>
+      </p>
   * *InformRequest* (od verzie SNMPv2)
     * potvrdzovaný Trap – čaká od managera potvrdenie 
+     <p align="center">
+      <img src="https://www.manageengine.com/network-monitoring/images/snmp-inform-acknowledgment.gif" alt="Inform request"/>
+      </p>
   *	*Response*
     * vracia väzby premenných a potvrdenie od agenta k managerovi
     *	reakcia na príkazy GetRequest, SetRequest, GetNextRequest, GetBulkRequest, InformRequest
