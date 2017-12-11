@@ -84,17 +84,27 @@ perl cfgmaker public@localhost --output server.cfg
 
 **Inštalácia**
 
-`apt-get install apache2`
+Inštalácia Apache servera
 
-`apt-get install mrtg snmp snmpd`
+> `apt-get install apache2`
 
-`mkdir /var/www/html/mrtg`
+Inštalácia MRTG, SNMP agent a manažér
 
-`nano /etc/mrtg.cfg`
+> `apt-get install mrtg snmp snmpd`
 
-`cfgmaker public@[ROUTER_IP] > /etc/mrtg.cfg`
+Do tohto adresára budeme ukladať štatistické údaje, ktoré budú prístupné na serveri
 
-`indexmaker /etc/mrtg.cfg > /var/www/html/mrtg/index.html`
+> `mkdir /var/www/html/mrtg`
+
+Spustíme konfigurácie MRTG pre zariadenie s IP adresou `[IP]`
+
+> `cfgmaker public@[IP] > /etc/mrtg.cfg`
+
+Dodatočne upravíme `WorkDir` v `/etc/mrtg.cfg` na `WorkDir: /var/www/html/mrtg`
+
+Spustíme MRTG a výsledok zapíšeme do indexovej stránky
+
+> `indexmaker /etc/mrtg.cfg > /var/www/html/mrtg/index.html`
 
 ***
 
