@@ -45,7 +45,7 @@
 
 ## Návod
 
-### Windows - [link](https://oss.oetiker.ch/mrtg/doc/mrtg-nt-guide.en.html)
+### Windows - [link](https://oss.oetiker.ch/mrtg/doc/mrtg-nt-guide.en.html), iba 32 bit!
 
 **Prerekvizity**
 * [Perl](https://www.activestate.com/activeperl/downloads)
@@ -80,6 +80,21 @@ perl cfgmaker public@localhost --output server.cfg
 
 `perl mrtg server.cfg`
 
+### Linux
+
+**Inštalácia**
+
+`apt-get install apache2`
+
+`apt-get install mrtg snmp snmpd`
+
+`mkdir /var/www/html/mrtg`
+
+`nano /etc/mrtg.cfg`
+
+`cfgmaker public@[ROUTER_IP] > /etc/mrtg.cfg`
+
+`indexmaker /etc/mrtg.cfg > /var/www/html/mrtg/index.html`
 
 ***
 
@@ -89,4 +104,4 @@ perl cfgmaker public@localhost --output server.cfg
 
 [2] https://linux.die.net/man/1/mrtg
 
-[]
+[3] https://www.youtube.com/watch?v=-RIDO62Upcc
