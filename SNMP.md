@@ -209,6 +209,10 @@ alebo
 
 > `$snmpget -v1 -c public 10.0.0.1 sysUpTime.0` 
 
+7. Nastavenie hodnoty pre špecifické OID
+
+> `$snmpset -v1 -c public 10.0.0.1 sysName.0 s "Debian-server"` 
+
 ### Server (router)
 
 1. Inštalácia agenta 
